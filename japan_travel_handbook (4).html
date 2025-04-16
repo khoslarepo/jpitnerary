@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Travel Handbook - April 15-23, 2025</title>
+    <style>
+        /* Japanese-inspired styling */
+        :root {
+            --primary-color: #D64545; /* Traditional red */
+            --secondary-color: #1A1A1A; /* Dark gray/black */
+            --accent-color: #F2C94C; /* Gold accent */
+            --light-color: #F5F5F5; /* Light background */
+            --text-color: #333333;
+            --border-color: #E0E0E0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-color);
+            background-image: url('https://images.unsplash.com/photo-1545569341-9eb8b30979d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: 200px;
+            background-attachment: fixed;
+            background-repeat: repeat;
+            background-blend-mode: overlay;
+            background-opacity: 0.1;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: var(--primary-color);
+            color: white;
+            background-image: url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: multiply;
+            position: relative;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        nav {
+            background-color: var(--secondary-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        nav li {
+            margin: 0;
+        }
+        
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: var(--primary-color);
+        }
+        
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin: 20px 0 15px;
+            color: var(--secondary-color);
+        }
+        
+        h4 {
+            font-size: 1.2rem;
+            margin: 15px 0 10px;
+            color: var(--secondary-color);
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        .itinerary-day {
+            margin-bottom: 30px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .day-header {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 15px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .day-header h3 {
+            color: white;
+            margin: 0;
+        }
+        
+        .day-content {
+            padding: 20px;
+            display: none;
+            background-color: white;
+        }
+        
+        .day-content.active {
+            display: block;
+        }
+        
+        .activity {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed var(--border-color);
+        }
+        
+        .activity:last-child {
+            border-bottom: none;
+        }
+        
+        .activity-time {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .map-container {
+            height: 400px;
+            margin: 20px 0;
+            border: 1px solid var(--border-color);
+        }
+        
+        .phrase-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .phrase-table th, .phrase-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .phrase-table th {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        .phrase-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .tip-box {
+            background-color: #f9f9f9;
+            border-left: 4px solid var(--primary-color);
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .food-item {
+            display: flex;
+            margin-bottom: 30px;
+            align-items: center;
+        }
+        
+        .food-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+        
+        .food-info {
+            flex: 1;
+        }
+        
+        .packing-list {
+            list-style-type: none;
+        }
+        
+        .packing-list li {
+            padding: 10px 0;
+            border-bottom: 1px dashed var(--border-color);
+        }
+        
+        .packing-list li:before {
+            content: "✓";
+            color: var(--primary-color);
+            margin-right: 10px;
+        }
+        
+        .budget-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .budget-table th, .budget-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .budget-table th {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        .budget-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .budget-table .total-row {
+            font-weight: bold;
+            background-color: #f0f0f0;
+        }
+        
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .gallery-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        
+        .gallery-image:hover {
+            transform: scale(1.05);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            .food-item {
+                flex-direction: column;
+            }
+            
+            .food-image {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+        
+        /* Print styles */
+        @media print {
+            body {
+                background-image: none;
+                font-size: 12pt;
+            }
+            
+            .container {
+                max-width: 100%;
+                box-shadow: none;
+            }
+            
+            nav, .map-container {
+                display: none;
+            }
+            
+            header {
+                background-image: none;
+                background-color: white;
+                color: black;
+                padding: 20px 0;
+            }
+            
+            header h1, header p {
+                text-shadow: none;
+            }
+            
+            h2 {
+                color: black;
+                border-bottom-color: black;
+            }
+            
+            h3, h4 {
+                color: black;
+            }
+            
+            .day-header {
+                background-color: white;
+                color: black;
+                border: 1px solid black;
+            }
+            
+            .day-header h3 {
+                color: black;
+            }
+            
+            .day-content {
+                display: block;
+            }
+            
+            .activity-time {
+                color: black;
+            }
+            
+            .phrase-table th, .budget-table th {
+                background-color: white;
+                color: black;
+                border: 1px solid black;
+            }
+            
+            footer {
+                background-color: white;
+                color: black;
+            }
+            
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Japan Travel Handbook</h1>
+            <p>A Comprehensive Guide for Your 7-Day Journey<br>April 15-23, 2025</p>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#itinerary">Itinerary</a></li>
+                <li><a href="#maps">Maps</a></li>
+                <li><a href="#attractions">Attractions</a></li>
+                <li><a href="#phrases">Japanese Phrases</a></li>
+                <li><a href="#tips">Travel Tips</a></li>
+                <li><a href="#food">Culinary Guide</a></li>
+                <li><a href="#packing">Packing List</a></li>
+                <li><a href="#budget">Budget</a></li>
+            </ul>
+        </nav>
+        
+        <section id="introduction">
+            <h2>Introduction & Trip Overview</h2>
+            <p>Welcome to your personalized travel handbook for your upcoming 7-day journey through Japan! This guide has been carefully crafted to help you navigate and enjoy the rich cultural experiences, historical sites, and hidden gems that Japan has to offer.</p>
+            
+            <p>Your adventure will take you through the vibrant streets of Tokyo, the historic temples of Kyoto, the sacred deer park of Nara, and the lively food scene of Osaka. You'll be traveling during one of the most beautiful times to visit Japan - cherry blossom season in April, when the country transforms into a stunning display of pink and white blossoms.</p>
+            
+            <p>This handbook includes your day-by-day itinerary, essential Japanese phrases, travel tips, food recommendations, and much more to ensure you have an unforgettable experience. We've also included a special section on the perfect proposal spot at the Philosopher's Path in Kyoto, surrounded by cherry blossoms.</p>
+            
+            <div class="tip-box">
+                <h4>Trip Highlights:</h4>
+                <ul>
+                    <li>Experience the contrast between Tokyo's modernity and Kyoto's traditions</li>
+                    <li>Visit iconic landmarks like Sensoji Temple, Fushimi Inari Shrine, and Osaka Castle</li>
+                    <li>Enjoy cultural experiences including a tea ceremony and Zen meditation</li>
+                    <li>Witness the magical cherry blossom season</li>
+                    <li>Savor authentic Japanese cuisine from ramen to kaiseki</li>
+                    <li>Create the perfect proposal moment at the Philosopher's Path</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="itinerary">
+            <h2>Day-by-Day Itinerary</h2>
+            <p>Your 7-day journey through Japan has been carefully planned to provide a balance of iconic sights, cultural experiences, and free time to explore. Click on each day to see detailed information.</p>
+            
+            <div class="itinerary-day">
+                <div class="day-header">
+                    <h3>Day 1: Tuesday, April 15, 2025 - Tokyo Arrival</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div class="day-content">
+                    <p><strong>Location:</strong> Tokyo</p>
+                    <p><strong>Accommodation:</strong> THE GATE HOTEL Kaminarimon by HULIC (Asakusa, Tokyo)</p>
+                    
+                    <div class="activity">
+                        <h4><span class="activity-time">Morning:</span> Arrival at Narita/Haneda Airport</h4>
+                        <p>Arrive in Tokyo and transfer to your hotel in Asakusa</p>
+                        <p><strong>Transportation:</strong> Airport Limousine Bus or train to Tokyo (¥3000 per person)</p>
+                    </div>
+                    
+                    <div class="activity">
+                        <h4><span class="activity-time">Afternoon:</span> Asakusa Exploration</h4>
+                        <p>Visit Sensoji Temple and explore Nakamise Shopping Street</p>
+                        <p><strong>Transportation:</strong> Walking</p>
+                    </div>
+                    
+                    <div class="activity">
+                        <h4><span class="activity-time">Evening:</span> Welcome Dinner</h4>
+                        <p>Dinner at a local izakaya near the hotel</p>
+                        <p><strong>Cuisine:</strong> Japanese pub food</p>
+                    </div>
+                    
+                    <p><strong>Notes:</strong> Rest well after your flight. The hotel is conveniently located near many attractions.</p>
+                </div>
+            </div>
+            
+            <div class="itinerary-day">
+                <div class="day-header">
+                    <h3>Day 2: Wednesday, April 16, 2025 - Tokyo Exploration</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div class="day-content">
+                    <p><strong>Location:</strong> Tokyo</p>
+                    <p><strong>Accommodation:</strong> THE GATE HOTEL Kaminarimon by HULIC (Asakusa, Tokyo)</p>
+                    
+                    <div class="activity">
+                        <h4><span class="activity-time">Morning:</span> Meiji Shrine & Harajuku</h4>
+                        <p>Visit the serene Meiji Shrine followed by the vibrant Harajuku district</p>
+                        <p><strong>Transportation:</strong> Tokyo Subway (¥800 day pass per person)</p>
+                    </div>
+                    
+                    <div class="activity">
+                        <h4><span class="activity-time">Afternoon:</span> Shibuya & Kendo Experience</h4>
+                        <p>Cross the famous Shibuya Crossing and participate in a Kendo experience</p>
+                        <p><strong>Transportation:</strong> Included in day pass</p>
+                    </div>
+                    
+                    <div class="activity">
+                        <h4><span class="activity-time">Evening:</span> Dinner in Shibuya</h4>
+                        <p>Enjoy dinner at Ichiran Shibuya</p>
+                        <p><strong>Cuisine:</strong> Ramen</p>
+                    </div>
+                    
+                    <p><strong>Notes:</strong> The Kendo experience offers insight into traditional Japanese martial arts.</p>
+                </div>
+            </div>
+            
+            <div class="itinerary-day">
+                <div class="day-header">
+                    <h3>Day 3: Thursday, April 17, 2025 - Tokyo to Kyoto</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div class="day-content">
+                    <p><strong>Location:</strong> Tokyo to Kyoto</p>
+                    <p><strong>Accommodation:</strong> Kyoto Ryokan Gion Sano (Gion District, Kyoto)</p>
+                    
+                    <div class="activity">
+                        <h4><span class="activity-time">Morning:</span> Tokyo to Kyoto via Shinkansen</h4>
+                        <p>Take the bullet train from Tokyo to Kyoto (approx. 2.5 hours)</p>
+                        <p><strong>Transportation:</strong> Shinkansen (¥14000 per person)</p>
+                    </div>
+                    
+                    <div class="activity">
+                        <h4><span class="activity-time">Afternoon:</span> Arrival in Kyoto & Gion District</h4>
+                        <p>Check into ryokan and explore the historic Gion district</p>
+                        <p><strong>Transportation:</strong> Local bus to ryokan (¥230 per person)</p>
+                    </div>
+                    
+                    <div class="activity">
+                        <h4><span class="activity-time">Evening:</span> Kaiseki Dinner Experience</h4>
+                        <p>Traditional multi-course Japanese dinner at Kikunoi Honten</p>
+                        <p><strong>Cuisine:</strong> Kaiseki</p>
+                    </div>
+                    
+                    <p><strong>Notes:</strong> The ryokan offers a traditional Japanese experience with tatami floors and futon bedding.</p>
+                </div>
+            </div>
+            
+            <div class="itinerary-day">
+                <div class="day-header">
+                    <h3>Day 4: Friday, April 18, 2025 - Kyoto Exploration</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div class="day-content">
+                    <p><strong>Location:</strong> Kyoto</p>
+                    <p><strong>Accommodation:</strong> Kyoto Ryokan Gion Sano (Gion District, Kyoto)</p>
+                    
+                    <div class="activity">
+                        <h4><span class="activity-time">Morning:</span> Arashiyama Bamboo Grove & Monkey Park</h4>
+                        <p>Visit the famous bamboo forest and see Japanese macaques</p>
+                        <p><strong>Transportation:</strong> Kyoto Bus Day Pass (¥700 per person)</p>
+                    </div>
+                    
+                    <div class="activity">
+                        <h4><span class="activity-time">Afternoon:</span> Tea Ceremony Experience</h4>
+                        <p>Participate in a traditional Japanese tea ceremony</p>
+                        <p><strong>Transportation:</strong> Included in day pass</p>
+                    </div>
+                    
+                    <div class="activity">
+                        <h4><span class="activity-time">Evening:</span> Marriage Proposal at Philosopher's Path</h4>
+                        <p>Romantic evening walk along the canal lined with cherry trees - perfect for the proposal!</p>
+                        <p><strong>Transportation:</strong> Taxi to Philosopher's Path (¥1500)</p>
+                    </div>
+                    
+                    <p><strong>Notes:</strong> The Philosopher's Path is especially beautiful in April with cherry blossoms, making it perfect for the proposal.</p>
+                </div>
+            </div>
+            
+            <div class="itinerary-day">
+                <div class="day-header">
+                    <h3>Day 5: Saturday, April 19, 2025 - Kyoto Temples</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div class="day-content">
+                    <p><strong>Location:</strong> Kyoto</p>
+                    <p><strong>Accommodation:</strong> Kyoto Ryokan Gion Sano (Gion District, Kyoto)</p>
+                    
+                    <div class="activity">
+                        <h4><span class="activity-time">Morning:</span> Fushimi Inari Shrine</h4>
+                        <p>Early morning visit to the famous shrine with thousands of torii gates</p>
+                        <p><strong>Transportation:</strong> Kyoto Bus Day Pass (¥700 per person)</p>
+                    </div>
+                    
+                    <div class="activity">
+                        <h4><span class="activity-time">Afternoon:</span> Zen Meditation Experience</h4>
+                        <p>Guided meditation session at Kennin-ji Temple</p>
+                        <p><strong>Transportation:</strong> Included in day pass</p>
+                    </div>
+                    
+                    <div class="activity">
+                        <h4><span class="activity-time">Evening:</span> Pontocho Alley Dinner</h4>
+                        <p>Dinner at a restaurant along the atmospheric Pontocho Alley</p>
+                        <p><strong>Cuisine:</strong> Japanese</p>
+                    </div>
+                    
+                    <p><strong>Notes:</strong> Fushimi Inari is less crowded in the early morning. The Zen meditation offers a peaceful cultural experience.</p>
+                </div>
+            </div>
+            
+            <div class="itinerary-day">
+                <div class="day-header">
+                    <h3>Day 6: Sunday, April 20, 2025 - Day Trip to Nara</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div class="day-content">
+                    <p><strong>Location:</strong> Day Trip to Nara</p>
+                    <p><strong>Accommodation:</strong> Kyoto Ryokan Gion Sano (Gion District, Kyoto)</p>
+                    
+                    <div class="activity">
+                        <h4><span class="activity-time">Morning:</span> Travel to Nara</h4>
+                        <p>Take the JR train from Kyoto to Nara (45 minutes)</p>
+                        <p><strong>Transportation:</strong> JR Kyoto to Nara (¥800 per person each way)</p>
+                    </div>
+                    
+                    <div class="activity">
+                        <h4><span class="activity-time">Afternoon:</span> Nara Park & Todai-ji Temple</h4>
+                        <p>Visit the famous deer park and the Great Buddha Hall</p>
+                        <p><strong>Transportation:</strong> Walking in Nara</p>
+                    </div>
+                    
+                    <div class="activity">
+                        <h4><span class="activity-time">Evening:</span> Return to Kyoto & Dinner</h4>
+                        <p>Return to Kyoto and enjoy dinner at Nishiki Market</p>
+                        <p><strong>Cuisine:</strong> Various</p>
+                    </div>
+                    
+                    <p><strong>Notes:</strong> Nara Park is open 24/7. The deer are most active in the morning and late afternoon.</p>
+                </div>
+            </div>
+            
+            <div class="itinerary-day">
+                <div class="day-header">
+                    <h3>Day 7: Monday, April 21, 2025 - Day Trip to Osaka</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div class="day-content">
+                    <p><strong>Location:</strong> Day Trip to Osaka</p>
+                    <p><strong>Accommodation:</strong> Kyoto Ryokan Gion Sano (Gion District, Kyoto)</p>
+                    
+                    <div class="activity">
+                        <h4><span class="activity-time">Morning:</span> Travel to Osaka</h4>
+                        <p>Take the JR train from Kyoto to Osaka (30 minutes)</p>
+                        <p><strong>Transportation:</strong> JR Kyoto to Osaka (¥560 per person each way)</p>
+                    </div>
+                    
+                    <div class="activity">
+                        <h4><span class="activity-time">Afternoon:</span> Osaka Castle & Dotonbori</h4>
+                        <p>Visit the historic castle and the vibrant Dotonbori district</p>
+                        <p><strong>Transportation:</strong> Osaka subway (¥600 per person)</p>
+                    </div>
+                    
+                    <div class="activity">
+                        <h4><span class="activity-time">Evening:</span> Osaka Street Food Experience</h4>
+                        <p>Try various Osaka street foods like takoyaki and okonomiyaki</p>
+                        <p><strong>Cuisine:</strong> Takoyaki</p>
+                    </div>
+                    
+                    <p><strong>Notes:</strong> Osaka is known as Japan's kitchen - don't miss trying the local street food specialties.</p>
+                </div>
+            </div>
+            
+            <div class="itinerary-day">
+                <div class="day-header">
+                    <h3>Day 8: Tuesday, April 22, 2025 - Kyoto to Tokyo, Departure</h3>
+                    <span class="toggle-btn">+</span>
+                </div>
+                <div class="day-content">
+                    <p><strong>Location:</strong> Kyoto to Tokyo, Departure</p>
+                    <p><strong>Accommodation:</strong> N/A (Departure Day)</p>
+                    
+                    <div class="activity">
+                        <h4><span class="activity-time">Morning:</span> Return to Tokyo</h4>
+                        <p>Take the Shinkansen from Kyoto back to Tokyo</p>
+                        <p><strong>Transportation:</strong> Shinkansen (¥14000 per person)</p>
+                    </div>
+                    
+                    <div class="activity">
+                        <h4><span class="activity-time">Afternoon:</span> Last-minute Shopping in Tokyo</h4>
+                        <p>Visit Tokyo Station area for souvenirs and last-minute shopping</p>
+                        <p><strong>Transportation:</strong> Tokyo Subway (¥500 per person)</p>
+                    </div>
+                    
+                    <div class="activity">
+                        <h4><span class="activity-time">Evening:</span> Transfer to Airport & Departure</h4>
+                        <p>Take the train or bus to Narita/Haneda Airport for departure</p>
+                        <p><strong>Transportation:</strong> Airport train/bus (¥3000 per person)</p>
+                    </div>
+                    
+                    <p><strong>Notes:</strong> Allow at least 3 hours at the airport before your international flight.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="maps">
+            <h2>Maps & Key Locations</h2>
+            <p>Below are interactive maps showing the key locations you'll be visiting during your trip. You can zoom in and explore the areas before your arrival.</p>
+            
+            <h3>Tokyo</h3>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51840.42375333985!2d139.7328!3d35.6938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c0d02d8064d%3A0xd11a5f0b379e6db7!2sTokyo%2C%20Japan!5e0!3m2!1sen!2sus!4v1616729420000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
+            <h3>Kyoto</h3>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52289.69832429024!2d135.7681!3d35.0116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2sKyoto%2C%20Japan!5e0!3m2!1sen!2sus!4v1616729420000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
+            <h3>Nara</h3>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52289.69832429024!2d135.8048!3d34.6851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2sNara%2C%20Japan!5e0!3m2!1sen!2sus!4v1616729420000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
+            <h3>Osaka</h3>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52289.69832429024!2d135.5023!3d34.6937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6553406e2e1%3A0xc55bc16ee46a2fe7!2sOsaka%2C%20Japan!5e0!3m2!1sen!2sus!4v1616729420000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+        
+        <section id="attractions">
+            <h2>Key Attractions</h2>
+            <p>Here are some of the main attractions you'll be visiting during your trip, along with brief descriptions.</p>
+            
+            <h3>Tokyo Attractions</h3>
+            <div class="image-gallery">
+                <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Sensoji Temple" class="gallery-image">
+                <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Meiji Shrine" class="gallery-image">
+                <img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Shibuya Crossing" class="gallery-image">
+            </div>
+            
+            <h4>Sensoji Temple</h4>
+            <p>Tokyo's oldest temple, Sensoji in Asakusa is a vibrant center of worship that was founded in 628 CE. The approach to the temple is via the famous Nakamise Shopping Street, lined with traditional shops selling souvenirs and Japanese snacks.</p>
+            
+            <h4>Meiji Shrine</h4>
+            <p>A serene Shinto shrine dedicated to Emperor Meiji and Empress Shoken, surrounded by a lush forest of 120,000 trees. The shrine provides a peaceful escape from the bustling city and is adjacent to the trendy Harajuku district.</p>
+            
+            <h4>Shibuya Crossing</h4>
+            <p>The world's busiest pedestrian crossing, where up to 3,000 people cross at once during peak times. This iconic intersection is surrounded by giant video screens and neon advertisements, epitomizing Tokyo's energy.</p>
+            
+            <h3>Kyoto Attractions</h3>
+            <div class="image-gallery">
+                <img src="https://images.unsplash.com/photo-1493997181344-712f2f19d87a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Arashiyama Bamboo Grove" class="gallery-image">
+                <img src="https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Fushimi Inari Shrine" class="gallery-image">
+                <img src="https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Philosopher's Path" class="gallery-image">
+            </div>
+            
+            <h4>Arashiyama Bamboo Grove</h4>
+            <p>A magical forest of towering bamboo that creates an otherworldly atmosphere. The sunlight filtering through the dense bamboo creates a serene, green-tinted light that makes for a peaceful and photogenic experience.</p>
+            
+            <h4>Fushimi Inari Shrine</h4>
+            <p>Famous for its thousands of vermilion torii gates that create tunnels along the mountain trails. This shrine is dedicated to Inari, the Shinto god of rice, and features fox statues throughout the complex.</p>
+            
+            <h4>Philosopher's Path</h4>
+            <p>A stone path that follows a canal lined with cherry trees, named after philosopher Nishida Kitaro who used to meditate while walking this route. In April, it becomes one of Kyoto's most beautiful cherry blossom spots - perfect for your special proposal moment.</p>
+            
+            <h3>Nara & Osaka Attractions</h3>
+            <div class="image-gallery">
+                <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Nara Park Deer" class="gallery-image">
+                <img src="https://images.unsplash.com/photo-1590559899731-a382839e5549?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Osaka Castle" class="gallery-image">
+                <img src="https://images.unsplash.com/photo-1590766740616-0e6d22bcc75e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Dotonbori" class="gallery-image">
+            </div>
+            
+            <h4>Nara Park & Deer</h4>
+            <p>Home to over 1,000 freely roaming deer that are considered sacred messengers of the gods. The park also contains Todai-ji Temple, which houses the world's largest bronze Buddha statue.</p>
+            
+            <h4>Osaka Castle</h4>
+            <p>A historic castle that played a major role in the unification of Japan during the 16th century. The castle tower offers panoramic views of Osaka city and houses a museum detailing the castle's history.</p>
+            
+            <h4>Dotonbori</h4>
+            <p>Osaka's vibrant entertainment district famous for its dazzling neon signs, animated billboards, and the iconic Glico Running Man sign. This area is also known as "Osaka's kitchen" for its wide variety of street food and restaurants.</p>
+        </section>
+        
+        <section id="phrases">
+            <h2>Essential Japanese Phrases</h2>
+            <p>Learning a few basic Japanese phrases will enhance your travel experience and show respect to the locals. Here are some essential phrases to help you navigate Japan.</p>
+            
+            <h3>Basic Greetings & Courtesies</h3>
+            <table class="phrase-table">
+                <tr>
+                    <th>English</th>
+                    <th>Japanese</th>
+                    <th>Pronunciation</th>
+                </tr>
+                <tr>
+                    <td>Hello/Good afternoon</td>
+                    <td>こんにちは</td>
+                    <td>Konnichiwa</td>
+                </tr>
+                <tr>
+                    <td>Good morning</td>
+                    <td>おはようございます</td>
+                    <td>Ohayou gozaimasu</td>
+                </tr>
+                <tr>
+                    <td>Good evening</td>
+                    <td>こんばんは</td>
+                    <td>Konbanwa</td>
+                </tr>
+                <tr>
+                    <td>Thank you</td>
+                    <td>ありがとうございます</td>
+                    <td>Arigatou gozaimasu</td>
+                </tr>
+                <tr>
+                    <td>Excuse me/Sorry</td>
+                    <td>すみません</td>
+                    <td>Sumimasen</td>
+                </tr>
+                <tr>
+                    <td>Please</td>
+                    <td>お願いします</td>
+                    <td>Onegaishimasu</td>
+                </tr>
+                <tr>
+                    <td>Yes</td>
+                    <td>はい</td>
+                    <td>Hai</td>
+                </tr>
+                <tr>
+                    <td>No</td>
+                    <td>いいえ</td>
+                    <td>Iie</td>
+                </tr>
+            </table>
+            
+            <h3>Dining & Food</h3>
+            <table class="phrase-table">
+                <tr>
+                    <th>English</th>
+                    <th>Japanese</th>
+                    <th>Pronunciation</th>
+                </tr>
+                <tr>
+                    <td>This, please</td>
+                    <td>これをお願いします</td>
+                    <td>Kore wo onegaishimasu</td>
+                </tr>
+                <tr>
+                    <td>I want to order</td>
+                    <td>注文します</td>
+                    <td>Chuumon shimasu</td>
+                </tr>
+                <tr>
+                    <td>What do you recommend?</td>
+                    <td>お勧めは何ですか?</td>
+                    <td>Osusume wa nan desu ka?</td>
+                </tr>
+                <tr>
+                    <td>Water, please</td>
+                    <td>お水をお願いします</td>
+                    <td>Omizu wo onegaishimasu</td>
+                </tr>
+                <tr>
+                    <td>Check, please</td>
+                    <td>お会計をお願いします</td>
+                    <td>Okaikei wo onegaishimasu</td>
+                </tr>
+                <tr>
+                    <td>Delicious!</td>
+                    <td>美味しい!</td>
+                    <td>Oishii!</td>
+                </tr>
+                <tr>
+                    <td>Before eating</td>
+                    <td>いただきます</td>
+                    <td>Itadakimasu</td>
+                </tr>
+                <tr>
+                    <td>After eating</td>
+                    <td>ごちそうさまでした</td>
+                    <td>Gochisousama deshita</td>
+                </tr>
+            </table>
+            
+            <h3>Transportation & Directions</h3>
+            <table class="phrase-table">
+                <tr>
+                    <th>English</th>
+                    <th>Japanese</th>
+                    <th>Pronunciation</th>
+                </tr>
+                <tr>
+                    <td>Where is...?</td>
+                    <td>...はどこですか?</td>
+                    <td>...wa doko desu ka?</td>
+                </tr>
+                <tr>
+                    <td>How much is it?</td>
+                    <td>いくらですか?</td>
+                    <td>Ikura desu ka?</td>
+                </tr>
+                <tr>
+                    <td>Train station</td>
+                    <td>駅</td>
+                    <td>Eki</td>
+                </tr>
+                <tr>
+                    <td>Bus stop</td>
+                    <td>バス停</td>
+                    <td>Basu tei</td>
+                </tr>
+                <tr>
+                    <td>Taxi</td>
+                    <td>タクシー</td>
+                    <td>Takushii</td>
+                </tr>
+                <tr>
+                    <td>I want to go to...</td>
+                    <td>...に行きたいです</td>
+                    <td>...ni ikitai desu</td>
+                </tr>
+            </table>
+            
+            <div class="tip-box">
+                <h4>Language Tip:</h4>
+                <p>Even if you only know a few words, Japanese people appreciate the effort. Don't worry about making mistakes - a smile and a polite attitude go a long way!</p>
+            </div>
+        </section>
+        
+        <section id="tips">
+            <h2>Travel Tips</h2>
+            <p>Here are some essential tips to help you navigate Japan smoothly and respectfully.</p>
+            
+            <h3>Transportation</h3>
+            <div class="tip-box">
+                <ul>
+                    <li><strong>Japan Rail Pass:</strong> Consider purchasing a JR Pass before arriving in Japan if you plan to travel between cities.</li>
+                    <li><strong>IC Cards:</strong> Get a Suica or Pasmo card for convenient payment on trains, buses, and in many stores.</li>
+                    <li><strong>Train Etiquette:</strong> Keep quiet on trains, avoid eating on local trains, and don't talk on your phone.</li>
+                    <li><strong>Rush Hour:</strong> Try to avoid traveling on trains between 7:30-9:00 AM and 5:00-7:00 PM if possible.</li>
+                    <li><strong>Taxis:</strong> Taxis are clean and safe but expensive. The back door opens automatically - don't try to open or close it yourself.</li>
+                    <li><strong>Navigation:</strong> Download offline maps and train apps like Japan Transit Planner or Google Maps.</li>
+                </ul>
+            </div>
+            
+            <h3>Etiquette</h3>
+            <div class="tip-box">
+                <ul>
+                    <li><strong>Shoes:</strong> Remove your shoes when entering homes, ryokans, and some restaurants. Look for shoe racks or slippers at the entrance.</li>
+                    <li><strong>Bowing:</strong> A slight bow is a sign of respect when greeting people or saying thank you.</li>
+                    <li><strong>Tipping:</strong> Tipping is not customary in Japan and can sometimes cause confusion.</li>
+                    <li><strong>Eating:</strong> Avoid walking while eating, and don't stick your chopsticks vertically into rice.</li>
+                    <li><strong>Noise:</strong> Keep your voice down in public places, especially on public transportation.</li>
+                    <li><strong>Masks:</strong> Wearing masks when sick is common courtesy in Japan.</li>
+                    <li><strong>Photos:</strong> Always ask permission before taking photos of people, especially geishas in Kyoto.</li>
+                </ul>
+            </div>
+            
+            <h3>Money & Payment</h3>
+            <div class="tip-box">
+                <ul>
+                    <li><strong>Cash:</strong> Japan is still largely a cash-based society. Always carry sufficient yen.</li>
+                    <li><strong>ATMs:</strong> International-friendly ATMs can be found at 7-Eleven stores and post offices.</li>
+                    <li><strong>Credit Cards:</strong> Major hotels and department stores accept credit cards, but many smaller establishments don't.</li>
+                    <li><strong>Money Handling:</strong> Many shops provide a small tray for placing money - use this instead of handing money directly.</li>
+                    <li><strong>Coins:</strong> The 500 yen coin is valuable (about $3.50) - don't treat it like small change!</li>
+                </ul>
+            </div>
+            
+            <h3>Practical Information</h3>
+            <div class="tip-box">
+                <ul>
+                    <li><strong>Wifi:</strong> Free wifi is available in many public places, but consider renting a pocket wifi device for reliable internet.</li>
+                    <li><strong>Toilets:</strong> Public toilets are clean and plentiful. Modern Japanese toilets have many functions - look for the flush button!</li>
+                    <li><strong>Trash:</strong> Public trash cans are rare. Carry a small bag for your trash until you find a bin.</li>
+                    <li><strong>Convenience Stores:</strong> 7-Eleven, Lawson, and Family Mart are great for snacks, ATMs, and even decent meals.</li>
+                    <li><strong>Opening Hours:</strong> Many attractions close early (around 5 PM), so plan accordingly.</li>
+                    <li><strong>Weather:</strong> April can have variable weather - be prepared for both warm days and cool evenings.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="food">
+            <h2>Culinary Guide</h2>
+            <p>Japan offers an incredible variety of delicious foods. Here's a guide to some must-try dishes during your trip.</p>
+            
+            <h3>Must-Try Japanese Dishes</h3>
+            
+            <div class="food-item">
+                <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Sushi" class="food-image">
+                <div class="food-info">
+                    <h4>Sushi</h4>
+                    <p>Vinegared rice combined with fresh fish and other ingredients. Try both conveyor belt sushi (kaiten-zushi) for a casual experience and a higher-end sushi restaurant for the authentic experience.</p>
+                    <p><strong>Where to try:</strong> Tsukiji Outer Market in Tokyo</p>
+                </div>
+            </div>
+            
+            <div class="food-item">
+                <img src="https://images.unsplash.com/photo-1557872943-16a5ac26437e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Ramen" class="food-image">
+                <div class="food-info">
+                    <h4>Ramen</h4>
+                    <p>Noodle soup with various broths (shoyu/soy sauce, miso, tonkotsu/pork bone, or shio/salt) topped with sliced pork, green onions, and other ingredients.</p>
+                    <p><strong>Where to try:</strong> Ichiran in Shibuya, Tokyo</p>
+                </div>
+            </div>
+            
+            <div class="food-item">
+                <img src="https://images.unsplash.com/photo-1590766740616-0e6d22bcc75e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Takoyaki" class="food-image">
+                <div class="food-info">
+                    <h4>Takoyaki</h4>
+                    <p>Ball-shaped snacks filled with octopus pieces, tempura scraps, pickled ginger, and green onion, topped with takoyaki sauce, mayonnaise, and bonito flakes.</p>
+                    <p><strong>Where to try:</strong> Dotonbori in Osaka</p>
+                </div>
+            </div>
+            
+            <div class="food-item">
+                <img src="https://images.unsplash.com/photo-1590766740616-0e6d22bcc75e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Okonomiyaki" class="food-image">
+                <div class="food-info">
+                    <h4>Okonomiyaki</h4>
+                    <p>A savory pancake containing various ingredients like cabbage, meat, and seafood, topped with okonomiyaki sauce, mayonnaise, bonito flakes, and seaweed flakes.</p>
+                    <p><strong>Where to try:</strong> Dotonbori in Osaka</p>
+                </div>
+            </div>
+            
+            <div class="food-item">
+                <img src="https://images.unsplash.com/photo-1590766740616-0e6d22bcc75e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Kaiseki" class="food-image">
+                <div class="food-info">
+                    <h4>Kaiseki</h4>
+                    <p>Traditional multi-course Japanese dinner consisting of precisely prepared dishes that highlight seasonal ingredients. It's considered the pinnacle of Japanese cuisine.</p>
+                    <p><strong>Where to try:</strong> Kikunoi Honten in Kyoto (included in your itinerary)</p>
+                </div>
+            </div>
+            
+            <h3>Regional Specialties</h3>
+            
+            <h4>Tokyo</h4>
+            <p>Tokyo offers a vast array of dining options from high-end sushi to casual izakayas (Japanese pubs). Don't miss monjayaki (a runnier version of okonomiyaki) and tsukemen (dipping ramen).</p>
+            
+            <h4>Kyoto</h4>
+            <p>Known for its refined cuisine, Kyoto specializes in kaiseki ryori, yudofu (tofu hot pot), and traditional Japanese sweets (wagashi). The city's cuisine emphasizes subtle flavors and beautiful presentation.</p>
+            
+            <h4>Osaka</h4>
+            <p>Called "Japan's kitchen," Osaka is famous for street food. Try takoyaki (octopus balls), okonomiyaki (savory pancakes), and kushikatsu (deep-fried skewered meat and vegetables).</p>
+            
+            <h3>Dining Tips</h3>
+            <div class="tip-box">
+                <ul>
+                    <li>Say "Itadakimasu" before eating and "Gochisousama deshita" after finishing your meal.</li>
+                    <li>Slurping noodles is acceptable and even encouraged for hot dishes like ramen.</li>
+                    <li>If you have dietary restrictions, carry a card in Japanese explaining your needs.</li>
+                    <li>Tipping is not customary in Japan.</li>
+                    <li>Many restaurants display plastic food models or picture menus to help with ordering.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="packing">
+            <h2>Packing List for Japan in April</h2>
+            <p>April in Japan offers mild temperatures with occasional rain showers. Here's what to pack for your trip:</p>
+            
+            <h3>Clothing</h3>
+            <ul class="packing-list">
+                <li>Light jacket or cardigan for cool mornings and evenings</li>
+                <li>Long-sleeved shirts and t-shirts for layering</li>
+                <li>2-3 pairs of comfortable pants/jeans</li>
+                <li>1-2 pairs of shorts for warmer days</li>
+                <li>Light sweaters</li>
+                <li>Comfortable walking shoes (you'll be walking a lot!)</li>
+                <li>One nicer outfit for special dinners (like your kaiseki experience)</li>
+                <li>Socks (important for temple/shrine visits where shoes are removed)</li>
+                <li>Pajamas</li>
+                <li>Undergarments</li>
+            </ul>
+            
+            <h3>Accessories & Essentials</h3>
+            <ul class="packing-list">
+                <li>Compact umbrella or light rain jacket</li>
+                <li>Comfortable day bag or backpack</li>
+                <li>Sunglasses</li>
+                <li>Hat for sun protection</li>
+                <li>Travel adapter (Japan uses Type A and B plugs, 100V)</li>
+                <li>Portable charger/power bank</li>
+                <li>Camera</li>
+                <li>Engagement ring (hidden securely for the proposal!)</li>
+            </ul>
+            
+            <h3>Toiletries & Health</h3>
+            <ul class="packing-list">
+                <li>Basic toiletries (hotels will provide some basics)</li>
+                <li>Medications and prescriptions</li>
+                <li>Hand sanitizer</li>
+                <li>Face masks (common courtesy in Japan when feeling unwell)</li>
+                <li>Sunscreen</li>
+                <li>Lip balm</li>
+                <li>Small first-aid kit</li>
+                <li>Insect repellent</li>
+            </ul>
+            
+            <h3>Documents & Money</h3>
+            <ul class="packing-list">
+                <li>Passport (valid for at least 6 months beyond your stay)</li>
+                <li>Flight tickets and itinerary</li>
+                <li>Hotel reservations</li>
+                <li>Travel insurance information</li>
+                <li>Credit cards (inform your bank about travel plans)</li>
+                <li>Cash (Japanese yen - Japan is still largely cash-based)</li>
+                <li>Small coin purse (Japan uses coins for larger denominations)</li>
+                <li>Copy of passport and important documents (stored separately)</li>
+            </ul>
+            
+            <div class="tip-box">
+                <h4>Packing Tips:</h4>
+                <ul>
+                    <li>Pack light - you'll likely want to bring back souvenirs!</li>
+                    <li>Layering is key for April's variable temperatures</li>
+                    <li>Many hotels offer laundry services if needed</li>
+                    <li>Bring comfortable shoes - you'll be walking a lot</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="budget">
+            <h2>Budget Breakdown</h2>
+            <p>Here's a detailed breakdown of your trip expenses based on the itinerary:</p>
+            
+            <h3>Total Trip Cost</h3>
+            <div class="tip-box">
+                <p><strong>Total Cost:</strong> ¥407,800 JPY (approximately $2,718.67 USD)</p>
+                <p><strong>Budget Range:</strong> $2,500-5,000 USD</p>
+            </div>
+            
+            <h3>Daily Expenses</h3>
+            <table class="budget-table">
+                <tr>
+                    <th>Day</th>
+                    <th>Date</th>
+                    <th>Location</th>
+                    <th>Accommodation</th>
+                    <th>Meals</th>
+                    <th>Transportation</th>
+                    <th>Activities</th>
+                    <th>Daily Total</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Apr 15</td>
+                    <td>Tokyo</td>
+                    <td>¥18,300</td>
+                    <td>¥8,000</td>
+                    <td>¥6,000</td>
+                    <td>¥0</td>
+                    <td>¥32,300</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Apr 16</td>
+                    <td>Tokyo</td>
+                    <td>¥18,300</td>
+                    <td>¥7,000</td>
+                    <td>¥1,600</td>
+                    <td>¥10,000</td>
+                    <td>¥36,900</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Apr 17</td>
+                    <td>Tokyo to Kyoto</td>
+                    <td>¥30,600</td>
+                    <td>¥45,000</td>
+                    <td>¥28,460</td>
+                    <td>¥0</td>
+                    <td>¥104,060</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Apr 18</td>
+                    <td>Kyoto</td>
+                    <td>¥30,600</td>
+                    <td>¥10,000</td>
+                    <td>¥2,900</td>
+                    <td>¥13,000</td>
+                    <td>¥56,500</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Apr 19</td>
+                    <td>Kyoto</td>
+                    <td>¥30,600</td>
+                    <td>¥12,000</td>
+                    <td>¥1,400</td>
+                    <td>¥6,000</td>
+                    <td>¥50,000</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Apr 20</td>
+                    <td>Day Trip to Nara</td>
+                    <td>¥30,600</td>
+                    <td>¥8,000</td>
+                    <td>¥3,200</td>
+                    <td>¥1,200</td>
+                    <td>¥43,000</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Apr 21</td>
+                    <td>Day Trip to Osaka</td>
+                    <td>¥30,600</td>
+                    <td>¥9,000</td>
+                    <td>¥3,440</td>
+                    <td>¥1,000</td>
+                    <td>¥44,040</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Apr 22</td>
+                    <td>Kyoto to Tokyo, Departure</td>
+                    <td>¥0</td>
+                    <td>¥6,000</td>
+                    <td>¥35,000</td>
+                    <td>¥0</td>
+                    <td>¥41,000</td>
+                </tr>
+                <tr class="total-row">
+                    <td colspan="3">TOTAL</td>
+                    <td>¥189,600</td>
+                    <td>¥105,000</td>
+                    <td>¥82,000</td>
+                    <td>¥31,200</td>
+                    <td>¥407,800</td>
+                </tr>
+            </table>
+            
+            <h3>Expense Categories</h3>
+            <div class="tip-box">
+                <ul>
+                    <li><strong>Accommodation:</strong> ¥189,600 (46.5% of total)</li>
+                    <li><strong>Meals:</strong> ¥105,000 (25.7% of total)</li>
+                    <li><strong>Transportation:</strong> ¥82,000 (20.1% of total)</li>
+                    <li><strong>Activities:</strong> ¥31,200 (7.7% of total)</li>
+                </ul>
+            </div>
+            
+            <h3>Money-Saving Tips</h3>
+            <div class="tip-box">
+                <ul>
+                    <li>Consider purchasing a Japan Rail Pass if you plan to use the bullet train multiple times</li>
+                    <li>Convenience stores (konbini) offer affordable and good quality meals</li>
+                    <li>Many temples and shrines have free admission to the grounds (only special areas require payment)</li>
+                    <li>Look for lunch specials at restaurants, which are often cheaper than dinner</li>
+                    <li>Use IC cards like Suica or Pasmo for convenient and sometimes discounted travel</li>
+                </ul>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Japan Travel Handbook | April 15-23, 2025</p>
+            <p>Created with ❤️ for your special journey</p>
+            <p>Last Updated: March 27, 2025</p>
+        </footer>
+    </div>
+    
+    <script>
+        // JavaScript for interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle itinerary day details
+            const dayHeaders = document.querySelectorAll('.day-header');
+            
+            dayHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const toggleBtn = this.querySelector('.toggle-btn');
+                    
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                        toggleBtn.textContent = '+';
+                    } else {
+                        content.style.display = 'block';
+                        toggleBtn.textContent = '-';
+                    }
+                });
+            });
+            
+            // Show the first day by default
+            const firstDayContent = document.querySelector('.day-content');
+            const firstDayToggle = document.querySelector('.toggle-btn');
+            if (firstDayContent) {
+                firstDayContent.style.display = 'block';
+                firstDayToggle.textContent = '-';
+            }
+            
+            // Smooth scrolling for navigation
+            document.querySelectorAll('nav a').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 60,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
